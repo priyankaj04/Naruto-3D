@@ -49,7 +49,7 @@ const AboutDetails = () => {
         >
           <img
             className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=codebucks27&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
+            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/top-langs?username=priyankaj04&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
             alt="CodeBucks"
             loading="lazy"
           />
@@ -58,7 +58,7 @@ const AboutDetails = () => {
         <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
           <img
             className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=codebucks27&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
+            src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api?username=priyankaj04&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false`}
             alt="CodeBucks"
             loading="lazy"
           />
@@ -76,7 +76,7 @@ const AboutDetails = () => {
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <img
             className="w-full h-auto"
-            src={`${process.env.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL}?user=codebucks27&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B`}
+            src={`${process.env.NEXT_PUBLIC_GITHUB_STREAK_STATS_URL}?user=priyankaj04&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B`}
             alt="CodeBucks"
             loading="lazy"
           />
@@ -84,13 +84,13 @@ const AboutDetails = () => {
 
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <Link
-            href="https://github.com/codebucks27/Nextjs-contentlayer-blog"
+            href="https://github.com/priyankaj04/Nextjs-contentlayer-blog"
             target="_blank"
             className="w-full"
           >
             <img
               className="w-full h-auto"
-              src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/pin/?username=codebucks27&repo=Nextjs-contentlayer-blog&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2`}
+              src={`${process.env.NEXT_PUBLIC_GITHUB_STATS_URL}/api/pin/?username=priyankaj04&repo=Nextjs-contentlayer-blog&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2`}
               alt="CodeBucks"
               loading="lazy"
             />
