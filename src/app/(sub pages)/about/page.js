@@ -33,7 +33,7 @@ export default function Home() {
             Priyanka J
           </h1>
           <p className="font-light text-foreground text-lg">
-            I never give up
+            Believe it!
           </p>
         </div>
       </div>
