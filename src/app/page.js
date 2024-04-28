@@ -24,7 +24,7 @@ export default function Home() {
       <div className="w-full h-screen">
         <Navigation />
         <RenderModel>
-          <Naruto />
+          {/*<Naruto />*/}
         </RenderModel>
       </div>
     </main>

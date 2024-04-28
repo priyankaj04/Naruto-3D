@@ -9,23 +9,23 @@ import uzumakilogo from '../../../public/background/uzumakilogo.png';
 const getIcon = (icon) => {
   switch (icon) {
     case "home":
-      return <Home className="w-full h-auto" strokeWidth={3} />;
+      return <Home className="w-10 h-10 p-2" strokeWidth={3} />;
     case "about":
-      return <User className="w-full h-auto" strokeWidth={3} />;
+      return <User className="w-10 h-10 p-2 " strokeWidth={3} />;
     case "projects":
-      return <Palette className="w-full h-auto" strokeWidth={3} />;
+      return <Palette className="w-10 h-10 p-2" strokeWidth={3} />;
     case "contact":
-      return <Phone className="w-full h-auto" strokeWidth={3} />;
+      return <Phone className="w-10 h-10 p-2" strokeWidth={3} />;
     case "github":
-      return <Github className="w-full h-auto" strokeWidth={3} />;
+      return <Github className="w-10 h-10 p-2" strokeWidth={3} />;
     case "linkedin":
-      return <Linkedin className="w-full h-auto" strokeWidth={3} />;
+      return <Linkedin className="w-10 h-10 p-2" strokeWidth={3} />;
     case "twitter":
-      return <Twitter className="w-full h-auto" strokeWidth={3} />;
+      return <Twitter className="w-10 h-10 p-2" strokeWidth={3} />;
     case "resume":
-      return <NotebookText className="w-full h-auto" strokeWidth={3} />;
+      return <NotebookText className="w-10 h-10 p-2" strokeWidth={3} />;
     default:
-      return <Home className="w-full h-auto" strokeWidth={1.5} />;
+      return <Home className="w-10 h-10 p-2" strokeWidth={3} />;
   }
 };
 
@@ -41,37 +41,40 @@ const NavButton = ({ x, y, label, link, icon, newTab, labelDirection = "right", 
     <ResponsiveComponent>
       {({ size }) => {
         return size && size >= 480 ? (
-          <div
-            className="absolute cursor-pointer z-50"
-            style={{
-              transform: `translate(${x}, ${y})`,
-              background: `url(${uzumakilogo.src}) no-repeat center/cover`, // Set opacity for background image
-              width: 80,
-              height: 80,
-            }}
-          >
-            <NavLink
-              variants={item}
-              href={link}
-              target={newTab ? "_blank" : "_self"}
-              className="rounded-full flex items-center justify-center"
-              aria-label={label}
-              name={label}
-              prefetch={false}
-              scroll={false}
+            <div
+              className="absolute cursor-pointer z-50 flex items-center justify-center"
+              style={{
+                transform: `translate(${x}, ${y})`,
+
+              }}
             >
-              <span
-                style={{}}
-                className={`relative p-3 w-14 h-14 items-center animate-spin-slow-reverse group-hover:pause hover:text-accent opacity-100`}
+              <NavLink
+                variants={item}
+                href={link}
+                target={newTab ? "_blank" : "_self"}
+                className="rounded-full flex items-center justify-center flex-col"
+                aria-label={label}
+                name={label}
+                prefetch={false}
+                scroll={false}
               >
-                {getIcon(icon)}
-                <span className="peer bg-transparent absolute top-0 left-0 w-full h-full opacity-100" />
-                <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 text-foreground text-sm rounded-md shadow-lg whitespace-nowrap">
-                  {label}
+                <span
+                  style={{
+                    background: `url(${uzumakilogo.src}) no-repeat center/cover`, // Set opacity for background image
+                    width: 80,
+                    height: 80,
+                  }}
+                  className={`relative flex justify-center p-4 w-14 h-14 items-center animate-spin-slow-reverse group-hover:pause opacity-100`}
+                >
+                  {getIcon(icon)}
+                  <span className="peer bg-gray absolute top-0 left-0 w-full h-full opacity-100" />
+                  <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 text-white text-sm rounded-md shadow-lg whitespace-nowrap">
+                    {label}
+                  </span>
                 </span>
-              </span>
-            </NavLink>
-          </div>
+                <span className="animate-spin-slow-reverse group-hover:pause">{label}</span>
+              </NavLink>
+            </div>
         ) : (
           <div className="w-fit cursor-pointer z-50" style={{
             backgroundImage: `url(${uzumakilogo.src})`,
