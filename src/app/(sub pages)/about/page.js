@@ -22,7 +22,6 @@ export default function Home() {
         alt="Next.js Portfolio website's about page background image"
         className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-50"
       />
-
       <div className="w-full h-3/5 xs:h-3/4 sm:h-screen absolute top-1/3 -translate-y-1/2 left-0 z-10">
         <RenderModel>
           <Rasengan />
@@ -34,11 +33,10 @@ export default function Home() {
             Priyanka J
           </h1>
           <p className="font-light text-foreground text-lg">
-            Meet the wizard behind this portfolio
+            I never give up
           </p>
         </div>
       </div>
-
       <AboutDetails />
     </>
   );
